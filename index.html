@@ -27,7 +27,7 @@
     </style>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent shadow p-3 mb-5">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light text-uppercase bg-transparent shadow p-3 mb-5">
       <div class="container">
         <a class="navbar-brand text-white font-weight-bold" href="#">Profile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,11 +51,11 @@
           <img src="img/profil.jpeg" class="card-img mx-3 my-3 shadow rounded" alt="...">
         </div>
         <div class="col-md-6">
-          <div class="card-body mx-4 my-3">
-            <p class="card-text text-dark text-uppercase">hello, i'm</p>
-            <h4 class="card-title text-dark text-uppercase font-weight-bolder">akhsan bayu riantama</h4>
-            <p class="card-text text-dark text-uppercase">junior web developer</p>
-            <p class="card-text text-muted text-uppercase" style="font-size: 75%">I am currently taking semester 7 at stmik bina patria</p>
+          <div class="card-body mx-4 my-3 text-uppercase">
+            <p class="card-text text-dark">hello, i'm</p>
+            <h4 class="card-title text-dark font-weight-bolder">akhsan bayu riantama</h4>
+            <p class="card-text text-dark">junior web developer</p>
+            <p class="card-text text-muted" style="font-size: 75%">I am currently taking semester 7 at stmik bina patria</p>
             <div class="text-body mt-5">
               <p class="lnr lnr-calendar-full"> 3rd February, 1999</p>
               <p class="lnr lnr-phone-handset"> 0895 4012 24170</p>
@@ -69,40 +69,45 @@
   </div>
 
     <div class="container" id="section-about" style="margin-top: 15vh;">
-      <div class="row mt-5">
+      <div class="row mx-5 my-5">
         <div class="col-md-6">
-          <h3 class="mb-4">About Me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum animi a obcaecati enim fugiat tempora eius ut quisquam nulla eum provident hic laboriosam, quidem qui nobis excepturi. Nihil, dolor, animi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci optio veritatis commodi, est nostrum quos corporis officia sit. Ducimus ab, harum molestias labore maxime fugiat quod blanditiis earum voluptas perferendis!</p>
-          <h3 style="margin-top: 8vh" id="section-blog">Blog</h3>
+          <h3 class="mb-4 font-weight-bold">About Me</h3>
+          <p class="text-justify">Saat ini saya berstatus mahasiswa yang menempuh semester 7 di STMIK Bina Patria jurusan Teknik Informatika. Saya sedang mempelajari berbagai macam teknologi internet dari sisi client dan server. Saya sudah mempelajari beberapa teknologi website internet walaupun belum expert meliputi SASS, NodeJS, ReactJS, React Native, Laravel, CodeIgniter, Tailwind, GIT.</p>
+          <h3 style="margin-top: 8vh" id="section-blog" class="font-weight-bold">Blog</h3>
           <p>Visit my simple blog made with blogger</p>
           <a href="https://mediatechnology99.blogspot.com/">https://mediatechnology99.blogspot.com/</a>
         </div>
-        <div class="col-md-6">
-          <p>HTML</p>
+        <div class="col-md-6 mt-5">
           <div class="progress">
             <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <br>
-          <p>CSS</p>
+          <p>HTML</p>
           <div class="progress">
             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <br>
-          <p>Javascript</p>
+          <p>CSS</p>
           <div class="progress">
             <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <br>
-          <p>PHP</p>
+          <p>Javascript</p> 
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p>jQuery</p>
           <div class="progress">
             <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
+          <p>PHP</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p>CodeIgniter</p>
         </div>
       </div> 
     </div>
 
     <div class="container" id="section-contact" style="margin-top: 15vh;">
-      <h3>Contact</h3>
+      <h3 class="font-weight-bold">Contact</h3>
       <div class="row mt-5">
         <div class="col-md-5">
           <form>
@@ -146,7 +151,7 @@
           e.preventDefault();
           $("html, body").animate({ 
             scrollTop: $($(this).attr("href")).offset().top - 85
-          }, 700);
+          }, 800);
         });
       });
 
